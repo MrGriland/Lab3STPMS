@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <TextView
+        android:id="@+id/vnametv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/cphonetv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/vnametv"
+        tools:ignore="MissingConstraints"
+        android:onClick="GoPhone"/>
+
+    <TextView
+        android:id="@+id/cmailtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cphonetv"
+        tools:ignore="MissingConstraints"
+        android:onClick="GoMail"/>
+
+    <TextView
+        android:id="@+id/clinktv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cmailtv"
+        tools:ignore="MissingConstraints"
+        android:onClick="GoLink"/>
+
+    <ImageView
+        android:id="@+id/piciv"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toBottomOf="@id/clinktv"
+        tools:ignore="MissingConstraints"
+        android:onClick="GetPic"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

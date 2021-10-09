@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/emailtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/info"/>
+
+    <EditText
+        android:id="@+id/emailet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/emailtv"/>
+
+    <TextView
+        android:id="@+id/phonetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/emailet"/>
+
+    <EditText
+        android:id="@+id/phoneet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/phonetv"/>
+
+    <TextView
+        android:id="@+id/linktv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/phoneet"/>
+
+    <EditText
+        android:id="@+id/linket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/linktv"/>
+
+    <Button
+        android:id="@+id/linkb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        app:layout_constraintTop_toBottomOf="@id/linket"
+        android:onClick="Save"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
